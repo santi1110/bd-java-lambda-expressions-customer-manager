@@ -1,6 +1,3 @@
-package com.amazon.ata.lambdaexpressions.prework.consumer;
-
-import com.amazon.ata.lambdaexpressions.prework.resources.consumer.DatabaseManager;
 
 import java.util.List;
 

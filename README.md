@@ -1,9 +1,5 @@
 ### Functional interfaces with lambda expressions Pre-work
 
-**Branch Name:** lambdaexpressions-prework
-
-RDE workflow: `lambdaexpressions-prework-consumer-customermanagertest`
-
 Expected time required: 15 min
 
 In this scenario, you are completing an application that processes users of an online store. New terms and conditions
