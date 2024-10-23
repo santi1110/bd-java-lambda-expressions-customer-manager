@@ -7,6 +7,8 @@ import java.util.List;
  */
 public class CustomerManager {
 
+    private DatabaseManager databaseManager = new DatabaseManager();
+
     /**
      * Main method of project. When completed it should print to standard output a list of emailed customers.
      * @param args Main method parameter
@@ -25,6 +27,12 @@ public class CustomerManager {
      */
     public List<String> checkCustomers() {
         DatabaseManager databaseManager = new DatabaseManager();
+        List <String> customers = databaseManager.getCustomers();
+        customers.forEach(customer->{
+            if(!databaseManager.checkCustomer(customer)){
+                databaseManager.emailCustomer(customer);
+            }
+        });
         // TODO Get Customers from DatabaseManager using the method getCustomers
 
         // TODO Use List's forEach() method with a lambda expression to check the status for each customer,
